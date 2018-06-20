@@ -1,2 +1,2 @@
 # room-share
-Easily to calculate room  expenses
+Easily to calculate the room expenses.
