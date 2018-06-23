@@ -1,5 +1,5 @@
 {
-  "name": "expense_mgr_rest",
+  "name": "room-share-rest-api",
   "version": "1.0.0",
   "description": "to manage daily expenses",
   "main": "server.js",
