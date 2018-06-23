@@ -1,13 +1,14 @@
 var express = require('express'), 
                 reportRouter = express.Router(),                
                 mongoose = require('mongoose'),
-                Expense = require('../models/expenseModel');
+                Expense = require('../models/expenseModel'),
+                Constants = require('../constants');
 reportRouter.route('/')
     .get((req, res) => {
       Expense.find({}, function(err, expenses) {
         if (err)
             res.send(err);
-        var rent = 7800/4;
+        var rent = Constants.ROOM_RENT/Constants.MEMBERS_COUNT;
         var users = {
           1:{cr:0,dr:rent},
           2:{cr:0,dr:rent},

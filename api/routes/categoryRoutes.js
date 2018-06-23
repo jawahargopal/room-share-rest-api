@@ -4,10 +4,6 @@ var express = require('express'),
                 Category = require('../models/categoryModel');
 
 categoryRouter.use(function (req, res, next) {
-    console.log('category');
-    if (res) {
-        console.log('ccc');
-    }
     next();
 });
                   
