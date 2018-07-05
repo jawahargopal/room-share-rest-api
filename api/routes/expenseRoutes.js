@@ -4,10 +4,6 @@ var express = require('express'),
                 Expense = require('../models/expenseModel');
 
 expenseRouter.use(function (req, res, next) {
-    console.log('expense');
-    if (res) {
-        console.log('ccc');
-    }
     next();
 });
                   

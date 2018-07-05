@@ -13,8 +13,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 var entry = function (req, res, next) {
-  console.log('logged');
-  console.log(res);
   next();  
 }
 
