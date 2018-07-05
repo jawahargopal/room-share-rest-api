@@ -16,8 +16,7 @@ categoryRouter.route('/')
     })    
     .post((req, res) => {
         var category = new Category();      
-        category.name = req.body.name;  
-        console.log(req.body);
+        category.name = req.body.name;
         category.save(function(err) {
             if (err)
                 res.send(err);

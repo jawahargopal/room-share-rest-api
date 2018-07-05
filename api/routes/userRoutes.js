@@ -4,10 +4,6 @@ var express = require('express'),
                 User = require('../models/userModel');
 
 userRouter.use(function (req, res, next) {
-    console.log('user');
-    if (res) {
-        console.log('ccc');
-    }
     next();
 });
                   
