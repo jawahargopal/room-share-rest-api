@@ -3,6 +3,9 @@ var express = require('express'),
   port = process.env.PORT || 8080,
   mongoose = require('mongoose'),
   bodyParser = require('body-parser');
+
+
+  console.log('Hiiiii');
   
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
