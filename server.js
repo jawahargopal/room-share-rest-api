@@ -5,7 +5,8 @@ var express = require('express'),
   bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/expenseManager');
+//mongoose.connect('mongodb://localhost:27017/expenseManager');
+mongoose.connect('mongodb://admin:spartans300@ds219641.mlab.com:19641/room-share');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
